@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph_main"
+            app:startDestination="@id/main_page_1">
+
+
+    <fragment android:id="@+id/main_page"
+              android:name="com.xlh.mr.knightapp.fragment.MainPageFragment2"
+              android:label="fragment_page2"
+              tools:layout="@layout/fragment_main_page_fragment2">
+        <action android:id="@+id/action_main_page__to_main_page_1" app:destination="@id/main_page_1"/>
+        <action android:id="@+id/action_main_page__to_main_page_32" app:destination="@id/main_page_3"/>
+    </fragment>
+
+    <fragment android:id="@+id/main_page_1"
+              android:name="com.xlh.mr.knightapp.fragment.MainPageFragment1"
+              android:label="fragment_page1"
+              tools:layout="@layout/fragment_main_page_fragment1">
+
+        <action android:id="@+id/action_main_page_1_to_main_page_2" app:destination="@id/main_page_2"/>
+    </fragment>
+
+    <fragment android:id="@+id/main_page_2"
+              android:name="com.xlh.mr.knightapp.fragment.MainPageFragment2"
+              android:label="fragment_page2"
+              tools:layout="@layout/fragment_main_page_fragment2">
+
+        <action android:id="@+id/action_main_page_2_to_main_page_3" app:destination="@id/main_page_3"/>
+        <action android:id="@+id/action_main_page_2_to_main_page_1" app:destination="@id/main_page_2"/>
+    </fragment>
+
+    <fragment android:id="@+id/main_page_3"
+              android:name="com.xlh.mr.knightapp.fragment.MainPageFragment3"
+              android:label="fragment_page3"
+              tools:layout="@layout/fragment_main_page_fragment3">
+
+        <action android:id="@+id/action_main_page_3_to_main_page_2" app:destination="@id/main_page_2"/>
+    </fragment>
+
+
+</navigation>
